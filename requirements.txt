@@ -1,0 +1,11 @@
+streamlit>=1.40.0
+pandas>=2.2.0
+numpy>=1.26.0
+plotly>=5.24.0
+requests>=2.32.0
+yfinance>=0.2.50
+lxml>=5.0.0
+# 注意：shioaji（永豐金 API）預設不安裝，因為它在 Streamlit Cloud 常常編譯失敗。
+# 你的程式已用 try/except 包住 shioaji，缺少時會自動改用 Yahoo 資料模式。
+# 若部署成功後仍想啟用 shioaji，再把下一行取消註解重新部署：
+# shioaji>=1.2.0
